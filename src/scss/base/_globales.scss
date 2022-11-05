@@ -1,0 +1,20 @@
+@use 'variables' as v;
+
+*,*::before,
+*,::after{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: v.$body;
+}
+
+h1{
+    font-size: v.$titulo;
+}
+
+p{
+    font-size: v.$parrafo;
+}
