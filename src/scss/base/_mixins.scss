@@ -1,7 +1,7 @@
 @use 'variables' as v;
 
 //Teléfono
-@mixin telefono {
+@mixin phone {
     @media only screen and (max-width: v.$phone){
         @content; //Específicar que vamos añadir contenido dentro
     }

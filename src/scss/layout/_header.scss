@@ -1,4 +1,5 @@
 @use '../base/variables' as v;
+@use '../base/mixins' as m;
 
 header{
     height: 820px;
@@ -7,8 +8,8 @@ header{
 
 .navbar{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 100px;
     background-color: v.$blanco;
     height: 75px;
     .image{
@@ -20,7 +21,9 @@ header{
         }
     }
 
-   
+    .content_toggle{
+        display: none;
+    }
 
     ul{     
         padding-top: 25px;
@@ -41,7 +44,7 @@ header{
     .nav_1{
         ul{
             display: grid;
-            grid-template-columns: repeat(3,1fr);
+            grid-template-columns: repeat(4,1fr);
             gap: 30px;
         }
     }
@@ -68,6 +71,67 @@ header{
         }
        }
     }
+}
 
+
+//Versión responsive
+.navbar{
+    @include m.phone{
+        .logo_luis{
+            display: none;
+        }
+
+        .nav_1{
+            
+            width: 170px;
+            visibility: inherit;
+            position: fixed;
+            top: 0%;
+            bottom: 0;
+            left: 0%;
+            right: 0%;
+            background-color: v.$negro;
+            z-index: 1;
+            ul{
+                display: block;
+                li{
+                    background-color: v.$blanco;
+                    padding: 10px;
+                    margin: 0% auto;
+                    margin-top: 10px;
+                    border-radius: 5px;
+                    text-align: center;
+                    width: 90%;             
+                }
+            }
+
+            .content_toggle{
+                display: block;
+                img{
+                    width: 40px;
+                    height: 40px;
+                    position: relative;
+                    top: 18px;
+                    left: 50px;
+                }
+            }
+
+        }
+
+        .nav_3{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+
+            a{
+                button{
+                    margin: 0%;
+                    position: relative;
+                    right: 10px;
+                    text-align: center;
+                }
+            }           
+        }
+    }
 }
 

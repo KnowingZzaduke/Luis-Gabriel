@@ -18,16 +18,15 @@
                 <img src="src/img/logo-l.png" alt="Luis Buelvas Logo" class="logo_luis">
             </div>
 
-            <div class="nav_1">
+            <div class="nav_1">           
+                <div class="content_toggle">
+                    <img src="/src/img/menu.png" alt="">
+                </div>
+                
                 <ul>
-                    <li><a href="">Inicio</a></li>
-                    <li><a href="" class="cursos">Cursos</a></li>
-                    <li><a href="">Sobre mí</a></li>
-                </ul>
-            </div>
-            
-            <div class="nav_2">
-                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#" class="cursos">Cursos</a></li>
+                    <li><a href="#">Sobre mí</a></li>
                     <li><a href="#">Contacto</a></li>
                 </ul>
             </div>
@@ -36,6 +35,8 @@
                 <a href="?action=iniciar" target="_blank"><button class="sing_in">Iniciar sesión</button></a>
                 <a href="?action=registrar"><button class="register">Registrarse</button></a>
             </div>
+
+        
         </nav>
 
         <div class="all_content">

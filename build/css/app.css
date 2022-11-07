@@ -333,8 +333,8 @@ header {
 
 .navbar {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 100px;
   background-color: white;
   height: 75px;
 }
@@ -343,6 +343,9 @@ header {
   position: relative;
   bottom: 25px;
   left: 8rem;
+}
+.navbar .content_toggle {
+  display: none;
 }
 .navbar ul {
   padding-top: 25px;
@@ -359,7 +362,7 @@ header {
 }
 .navbar .nav_1 ul {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 30px;
 }
 .navbar .nav_3 {
@@ -379,4 +382,54 @@ header {
   color: #76448A;
   cursor: pointer;
   transform: scale(1.1);
+}
+
+@media only screen and (max-width: 480px) {
+  .navbar .logo_luis {
+    display: none;
+  }
+  .navbar .nav_1 {
+    width: 170px;
+    visibility: inherit;
+    position: fixed;
+    top: 0%;
+    bottom: 0;
+    left: 0%;
+    right: 0%;
+    background-color: black;
+    z-index: 1;
+  }
+  .navbar .nav_1 ul {
+    display: block;
+  }
+  .navbar .nav_1 ul li {
+    background-color: white;
+    padding: 10px;
+    margin: 0% auto;
+    margin-top: 10px;
+    border-radius: 5px;
+    text-align: center;
+    width: 90%;
+  }
+  .navbar .nav_1 .content_toggle {
+    display: block;
+  }
+  .navbar .nav_1 .content_toggle img {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    top: 18px;
+    left: 50px;
+  }
+  .navbar .nav_3 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  .navbar .nav_3 a button {
+    margin: 0%;
+    position: relative;
+    right: 10px;
+    text-align: center;
+  }
 }
