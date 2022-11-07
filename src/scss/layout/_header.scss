@@ -2,13 +2,72 @@
 
 header{
     height: 820px;
+    background-color: v.$gris;
 }
 
 .navbar{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    background-color: v.$blanco;
+    height: 75px;
     .image{
         img{
             width: 100px;
+            position: relative;
+            bottom: 25px;
+            left: 8rem;
         }
     }
 
+   
+
+    ul{     
+        padding-top: 25px;
+        li{
+            list-style: none;
+
+            a{
+                text-decoration: none;
+                color: v.$negro;
+
+                &:hover{
+                    color: v.$morado;
+                }
+            }
+        } 
+    }
+
+    .nav_1{
+        ul{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 30px;
+        }
+    }
+
+    .nav_3{
+       padding-top: 15px;
+
+       a{
+        button{
+            margin: 0 5px 0 5px;
+            color: v.$blanco;
+            padding: 12px;
+            width: 112px;
+            background-color: v.$azulClaro;
+            border: none;
+            border-radius: 5px;
+            transition: .25s;
+
+            &:hover{
+                color: v.$morado;
+                cursor: pointer;
+                transform: scale(1.1);
+            }
+        }
+       }
+    }
+
 }
+

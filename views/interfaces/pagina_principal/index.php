@@ -15,7 +15,7 @@
     <header>
         <nav class="navbar">
             <div class="image">
-                <img src="img/LB_Logo-04.png" alt="Luis Buelvas Logo" class="logo_luis">
+                <img src="src/img/logo-l.png" alt="Luis Buelvas Logo" class="logo_luis">
             </div>
 
             <div class="nav_1">
