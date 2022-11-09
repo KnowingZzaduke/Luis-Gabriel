@@ -6,6 +6,18 @@ header{
     background-color: v.$gris;
 }
 
+@include m.phone{
+    header{
+        height: auto;
+    }
+}
+
+@include m.tablet{
+    header{
+        height: auto;
+    }
+}
+
 .navbar{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -39,6 +51,14 @@ header{
                 }
             }
         } 
+    }
+
+    .nav_1-off{
+        ul{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 30px;
+        }
     }
 
     .nav_1{
@@ -76,9 +96,33 @@ header{
 
 //Versión responsive
 .navbar{
+    //Teléfono
     @include m.phone{
         .logo_luis{
             display: none;
+        }
+
+        .nav_1-off{
+            ul{
+                display: none;             
+            }
+
+            .content_toggle{
+                display: block;
+                .hamburguesa{
+                    width: 40px;
+                    height: 40px;
+                    position: absolute;
+                    left: 0%;
+                    top: 18px;
+                }
+
+                .content_cerrar{
+                   display: none;
+                }
+
+               
+            }
         }
 
         .nav_1{
@@ -107,13 +151,132 @@ header{
 
             .content_toggle{
                 display: block;
-                img{
+                .hamburguesa{
+                    display: none;
+                }
+
+                .content_cerrar{
+                    display: flex;
+                    justify-content: center;
+                    padding-top: 20px;
+
+                    p{
+                        color: v.$blanco;
+                        margin: 0 5px 0 5px;
+                    }
+
+                    .x{
+                        display: block;
+                        width: 25px;
+                        margin: 0 5px 0 5px;
+                        filter: invert(100%);
+    
+                    }
+                }
+               
+            }
+
+        }
+
+        .nav_3{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            position: relative;
+            right: 80px;
+
+            a{
+                button{
+                    margin: 0%;
+                    text-align: center;
+                    transition: .25s transform;
+
+                    &:hover{
+                        transform: scale(1.1);
+
+                    }
+                }
+            }           
+        }
+    }
+    //Tablet
+    @include m.tablet{
+        .logo_luis{
+            display: none;
+        }
+
+        .nav_1-off{
+            ul{
+                display: none;             
+            }
+
+            .content_toggle{
+                display: block;
+                .hamburguesa{
                     width: 40px;
                     height: 40px;
-                    position: relative;
+                    position: absolute;
+                    left: 0%;
                     top: 18px;
-                    left: 50px;
                 }
+
+                .content_cerrar{
+                   display: none;
+                }
+
+               
+            }
+        }
+
+        .nav_1{
+            
+            width: 170px;
+            visibility: inherit;
+            position: fixed;
+            top: 0%;
+            bottom: 0;
+            left: 0%;
+            right: 0%;
+            background-color: v.$negro;
+            z-index: 1;
+            ul{
+                display: block;
+                li{
+                    background-color: v.$blanco;
+                    padding: 10px;
+                    margin: 0% auto;
+                    margin-top: 10px;
+                    border-radius: 5px;
+                    text-align: center;
+                    width: 90%;             
+                }
+            }
+
+            .content_toggle{
+                display: block;
+                .hamburguesa{
+                    display: none;
+                }
+
+                .content_cerrar{
+                    display: flex;
+                    justify-content: center;
+                    padding-top: 20px;
+
+                    p{
+                        color: v.$blanco;
+                        margin: 0 5px 0 5px;
+                    }
+
+                    .x{
+                        display: block;
+                        width: 25px;
+                        margin: 0 5px 0 5px;
+                        filter: invert(100%);
+    
+                    }
+                }
+               
             }
 
         }
@@ -127,11 +290,147 @@ header{
                 button{
                     margin: 0%;
                     position: relative;
-                    right: 10px;
+                    right: 40px;
                     text-align: center;
+                    transition: .25s transform;
+
+                    &:hover{
+                        transform: scale(1.1);
+
+                    }
                 }
             }           
         }
     }
 }
 
+//Versión desktop
+.all_content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+
+    .content_1{
+        .section_info{
+            padding-top: 6rem;
+            padding-left: 5rem;
+
+            h1{
+                font-size: v.$titulo;
+                font-weight: 900;
+            }
+
+            p{
+                line-height: 25px;
+            }
+
+            a{
+                button{
+                    margin-top: 10px;
+                    padding: 15px 40px;
+                    background-color: v.$azul;
+                    text-align: center;
+                    transition: .25s transform;
+                    border: none;
+                    border-radius: 5px;
+                    color: v.$blanco;
+
+                    &:hover{
+                        transform: scale(1.1);
+                        cursor: pointer;
+                    }
+                }
+            }           
+        }   
+    }
+
+    .content_2{
+        video{
+            width: 600px;
+            height: 600px;
+            -moz-border-radius: 50%;
+            -webkit-border-radius: 50%;
+            border-radius: 50%;        
+            margin-top: 3rem;
+
+        }
+       
+    }
+}
+
+//Versión resposive
+.all_content{
+    @include m.phone{
+        display: block;
+
+        .content_1{
+            padding-left: 5px;
+            .section_info{
+                padding: 0%;
+
+                h1{
+                    width: auto;
+                    font-size: 2.5rem;
+                }
+
+                p{
+                    width: auto;
+                }
+
+                .content_boton-iniciar{
+                    text-align: center;
+                   a{
+                    button{
+                        padding: 15px 60px;
+                        margin-bottom: 20px;
+                    }
+                   }
+                } 
+            }
+        }
+
+        .content_2{
+            text-align: center;
+
+           video{
+            display: none;
+           }
+        }
+    }
+    @include m.tablet{
+        display: block;
+
+        .content_1{
+            padding-left: 5px;
+            .section_info{
+                padding: 0%;
+
+                h1{
+                    width: auto;
+                }
+
+                p{
+                    width: auto;
+                }
+
+                .content_boton-iniciar{
+                    text-align: center;
+                   a{
+                    button{
+                        padding: 15px 60px;
+                        margin-bottom: 20px;
+                    }
+                   }
+                } 
+            }
+        }
+
+        .content_2{
+            text-align: center;
+
+           video{
+            display: none;
+           }
+        }
+    }
+}

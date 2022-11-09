@@ -18,9 +18,13 @@
                 <img src="src/img/logo-l.png" alt="Luis Buelvas Logo" class="logo_luis">
             </div>
 
-            <div class="nav_1">           
+            <div class="nav_1-off">           
                 <div class="content_toggle">
-                    <img src="/src/img/menu.png" alt="">
+                    <img src="src/img/menu.png" alt="" class="hamburguesa">
+                    <div class="content_cerrar">
+                        <p>Menú</p>
+                        <img src="src/img/x.png" alt="" class="x">
+                    </div>
                 </div>
                 
                 <ul>
@@ -41,26 +45,27 @@
 
         <div class="all_content">
             <div class="content_1">
-                <h1 class="title_header">
-                    Luis Buelvas <br> Conferencista & Coach Financiero 
-                </h1>
+                <div class="section_info">
+                     <h1 class="title_header">
+                        Luis Buelvas <br> Conferencista <br> & Coach <br> Financiero 
+                    </h1>
 
-                <p class="paragraph_header">
-                    Está página ofrece una gran variedad de cursos que orientan <br>
-                    a las personas como tener libertad financiera y como lograr <br>
-                    éxito.
-                </p>
+                    <p class="paragraph_header">
+                        Está página ofrece una gran variedad de cursos que orientan <br>
+                         a las personas como tener libertad financiera y como lograr <br>
+                        éxito.
+                    </p>
 
-                <a href="#"><button class="button_beginning">Iniciar</button></a>
+                    <div class="content_boton-iniciar">
+                        <a href="#"><button class="button_beginning">Iniciar</button></a>
+                    </div>
+
+                </div>              
             </div>
 
             <div class="content_2">
                 <!-- <video src="videos/Logo-animado-luis gabriel.mp4"></video> -->
-                <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
-                width="700" height="700" viewBox="0 0 120 120">
-                <circle cx="60" cy="60" r="50"
-                fill="RoyalBlue"/>
-                </svg>
+                <video src="src/videos/L-video-fondo.mp4" autoplay muted></video>
             </div>
         </div>
 
@@ -72,75 +77,78 @@
             Cursos
         </h2>
 
-        <div class="main_1">
-            <a href="#">
-                <div class="curso">
-                    <h3>Finanzas personales</h3>
-                    <img src="img/finanzas.png" alt="">
+        <div class="main">
+            <div class="cursos">
+                <a href="#">
+                    <div class="curso">
+                        <h3>Finanzas personales</h3>
+                        <img src="img/finanzas.png" alt="">
 
-                </div>
-            </a>
+                    </div>
+                </a>
 
-            <a href="#">
-                <div class="curso">
-                    <h3>Finanzas personales</h3>
-                    <img src="img/finanzas.png" alt="">
+                <a href="#">
+                    <div class="curso">
+                        <h3>Finanzas personales</h3>
+                        <img src="img/finanzas.png" alt="">
 
-                </div>
-            </a>
+                    </div>
+                </a>
 
-            <a href="#">
-                <div class="curso">
-                    <h3>Finanzas personales</h3>
-                    <img src="img/finanzas.png" alt="">
+                <a href="#">
+                    <div class="curso">
+                        <h3>Finanzas personales</h3>
+                        <img src="img/finanzas.png" alt="">
 
-                </div>
-            </a>
+                    </div>
+                </a>
 
-            <a href="#">
-                <div class="curso">
-                    <h3>Finanzas personales</h3>
-                    <img src="img/finanzas.png" alt="">
+                <a href="#">
+                    <div class="curso">
+                        <h3>Finanzas personales</h3>
+                        <img src="img/finanzas.png" alt="">
 
-                </div>
-            </a>
-           
+                    </div>
+                </a>
+            
+            </div>
+
+            <div class="cursos">
+                <a href="#">
+                    <div class="curso">
+                        <h3>Finanzas personales</h3>
+                        <img src="img/finanzas.png" alt="">
+
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="curso">
+                        <h3>Finanzas personales</h3>
+                        <img src="img/finanzas.png" alt="">
+
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="curso">
+                        <h3>Finanzas personales</h3>
+                        <img src="img/finanzas.png" alt="">
+
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="curso">
+                        <h3>Finanzas personales</h3>
+                        <img src="img/finanzas.png" alt="">
+
+                    </div>
+                </a>
+        </div>
         </div>
 
-        <div class="main_2">
-            <a href="#">
-                <div class="curso">
-                    <h3>Finanzas personales</h3>
-                    <img src="img/finanzas.png" alt="">
-
-                </div>
-            </a>
-
-            <a href="#">
-                <div class="curso">
-                    <h3>Finanzas personales</h3>
-                    <img src="img/finanzas.png" alt="">
-
-                </div>
-            </a>
-
-            <a href="#">
-                <div class="curso">
-                    <h3>Finanzas personales</h3>
-                    <img src="img/finanzas.png" alt="">
-
-                </div>
-            </a>
-
-            <a href="#">
-                <div class="curso">
-                    <h3>Finanzas personales</h3>
-                    <img src="img/finanzas.png" alt="">
-
-                </div>
-            </a>
-           
-        </div>
+       
     </main>
 
     <h2 class="opinion_title">

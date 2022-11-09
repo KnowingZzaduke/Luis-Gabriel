@@ -1,0 +1,97 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+//Versión desktop
+
+main{
+    .title_curso{
+        font-size: 4rem;
+        text-align: center;
+        padding-top: 2rem;
+    }
+}
+.main{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+    margin-bottom: 2rem;
+
+    .cursos{
+        display: grid;
+        padding-top: 40px;
+        grid-template-columns: repeat(2, 1fr);
+
+        a{
+            text-decoration: none;
+            color: v.$negro;
+        }
+        .curso{
+            margin: 0% auto;
+            margin-top: 2rem;
+            width: 300px;
+            height: 200px;
+            background-color: v.$blanco;
+            border-radius: 5px;
+            box-shadow: 0 0 10px 1px v.$azul;
+            transition: .25s;
+
+            &:hover{
+                box-shadow: 0 0 15px 1px v.$azul;
+                transform: scale(1.1);
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+//Versión responsive
+main{
+    @include m.phone{
+        .title_curso{
+            font-size: 2.5rem;
+        }
+
+        .main{
+            display: block;
+            
+            .cursos{
+                display: block;
+
+                .curso{
+                    width: 250px;
+                    height: 150px;
+                }
+            }
+        }
+    }
+
+    @include m.tablet{
+        .title_curso{
+            font-size: 2.5rem;
+        }
+
+        .main{
+            display: block;
+            
+            .cursos{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+
+                .curso{
+                    width: 300px;
+                    height: 200px;
+                }
+            }
+        }
+    }
+
+    @include m.desktop{
+        .main{
+            display: block;
+        }
+        .cursos{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
