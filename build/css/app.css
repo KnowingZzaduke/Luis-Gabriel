@@ -487,7 +487,6 @@ header {
     margin: 0%;
     text-align: center;
     transition: 0.25s transform;
-    width: 45px;
   }
   .navbar .nav_3 a button:hover {
     transform: scale(1.1);
