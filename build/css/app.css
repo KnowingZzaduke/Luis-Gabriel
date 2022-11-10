@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "PT Sans", sans-serif;
 }
@@ -352,6 +356,9 @@ header {
   gap: 100px;
   background-color: white;
   height: 75px;
+  position: fixed;
+  top: 0%;
+  width: 100%;
 }
 .navbar .image img {
   width: 100px;
@@ -380,10 +387,8 @@ header {
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
 }
-.navbar .nav_1 ul {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
+.navbar .content_navbar-small {
+  display: none;
 }
 .navbar .nav_3 {
   padding-top: 15px;
@@ -405,68 +410,71 @@ header {
 }
 
 @media only screen and (max-width: 480px) {
+  .navbar {
+    z-index: 1;
+  }
   .navbar .logo_luis {
     display: none;
   }
-  .navbar .nav_1-off ul {
+  .navbar .nav_1-off {
     display: none;
   }
-  .navbar .nav_1-off .content_toggle {
+  .navbar .content_navbar-small {
     display: block;
   }
-  .navbar .nav_1-off .content_toggle .hamburguesa {
+  .navbar .content_navbar-small .menu_hamburguesa {
     width: 40px;
-    height: 40px;
     position: absolute;
-    left: 0%;
-    top: 18px;
-  }
-  .navbar .nav_1-off .content_toggle .content_cerrar {
-    display: none;
-  }
-  .navbar .nav_1 {
-    width: 170px;
-    visibility: inherit;
-    position: fixed;
-    top: 0%;
-    bottom: 0;
+    top: 17px;
     left: 0%;
     right: 0%;
+  }
+  .navbar .content_navbar-small .content_menu-desplegable {
     background-color: black;
+    transition: 0.5s;
+    visibility: inherit;
+    width: 200px;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    top: 0;
+    bottom: 0%;
+    position: fixed;
     z-index: 1;
   }
-  .navbar .nav_1 ul {
-    display: block;
-  }
-  .navbar .nav_1 ul li {
-    background-color: white;
-    padding: 10px;
-    margin: 0% auto;
-    margin-top: 10px;
-    border-radius: 5px;
-    text-align: center;
-    width: 90%;
-  }
-  .navbar .nav_1 .content_toggle {
-    display: block;
-  }
-  .navbar .nav_1 .content_toggle .hamburguesa {
-    display: none;
-  }
-  .navbar .nav_1 .content_toggle .content_cerrar {
+  .navbar .content_navbar-small .content_menu-desplegable .content_menu {
     display: flex;
-    justify-content: center;
     padding-top: 20px;
+    justify-content: center;
   }
-  .navbar .nav_1 .content_toggle .content_cerrar p {
+  .navbar .content_navbar-small .content_menu-desplegable .content_menu h4 {
     color: white;
-    margin: 0 5px 0 5px;
+    height: 30px;
+    margin: 0 5px;
   }
-  .navbar .nav_1 .content_toggle .content_cerrar .x {
-    display: block;
-    width: 25px;
-    margin: 0 5px 0 5px;
+  .navbar .content_navbar-small .content_menu-desplegable .content_menu span {
+    position: relative;
+    margin: 0 5px;
+  }
+  .navbar .content_navbar-small .content_menu-desplegable .content_menu span .cerrar {
+    width: 20px;
     filter: invert(100%);
+  }
+  .navbar .content_navbar-small .content_enlaces-small ul {
+    display: block;
+  }
+  .navbar .content_navbar-small .content_enlaces-small ul li {
+    padding: 10px;
+    width: 90%;
+    background-color: white;
+    border-radius: 5px;
+    margin: 0% auto;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .navbar .content_navbar-small .content_enlaces-small ul li a {
+    color: black;
   }
   .navbar .nav_3 {
     display: grid;
@@ -488,75 +496,75 @@ header {
   .navbar .logo_luis {
     display: none;
   }
-  .navbar .nav_1-off ul {
+  .navbar .nav_1-off {
     display: none;
   }
-  .navbar .nav_1-off .content_toggle {
+  .navbar .content_navbar-small {
     display: block;
   }
-  .navbar .nav_1-off .content_toggle .hamburguesa {
+  .navbar .content_navbar-small .menu_hamburguesa {
     width: 40px;
-    height: 40px;
     position: absolute;
-    left: 0%;
-    top: 18px;
-  }
-  .navbar .nav_1-off .content_toggle .content_cerrar {
-    display: none;
-  }
-  .navbar .nav_1 {
-    width: 170px;
-    visibility: inherit;
-    position: fixed;
-    top: 0%;
-    bottom: 0;
+    top: 17px;
     left: 0%;
     right: 0%;
+  }
+  .navbar .content_navbar-small .content_menu-desplegable {
     background-color: black;
+    visibility: inherit;
+    width: 250px;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    top: 0;
+    bottom: 0%;
+    position: fixed;
     z-index: 1;
+    transition: 0.2s;
   }
-  .navbar .nav_1 ul {
-    display: block;
-  }
-  .navbar .nav_1 ul li {
-    background-color: white;
-    padding: 10px;
-    margin: 0% auto;
-    margin-top: 10px;
-    border-radius: 5px;
-    text-align: center;
-    width: 90%;
-  }
-  .navbar .nav_1 .content_toggle {
-    display: block;
-  }
-  .navbar .nav_1 .content_toggle .hamburguesa {
-    display: none;
-  }
-  .navbar .nav_1 .content_toggle .content_cerrar {
+  .navbar .content_navbar-small .content_menu-desplegable .content_menu {
     display: flex;
-    justify-content: center;
     padding-top: 20px;
+    justify-content: center;
   }
-  .navbar .nav_1 .content_toggle .content_cerrar p {
+  .navbar .content_navbar-small .content_menu-desplegable .content_menu h4 {
     color: white;
-    margin: 0 5px 0 5px;
+    height: 30px;
+    margin: 0 5px;
   }
-  .navbar .nav_1 .content_toggle .content_cerrar .x {
-    display: block;
-    width: 25px;
-    margin: 0 5px 0 5px;
+  .navbar .content_navbar-small .content_menu-desplegable .content_menu span {
+    position: relative;
+    margin: 0 5px;
+  }
+  .navbar .content_navbar-small .content_menu-desplegable .content_menu span .cerrar {
+    width: 20px;
     filter: invert(100%);
+  }
+  .navbar .content_navbar-small .content_enlaces-small ul {
+    display: block;
+  }
+  .navbar .content_navbar-small .content_enlaces-small ul li {
+    padding: 10px;
+    width: 90%;
+    background-color: white;
+    border-radius: 5px;
+    margin: 0% auto;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .navbar .content_navbar-small .content_enlaces-small ul li a {
+    color: black;
   }
   .navbar .nav_3 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
+    position: relative;
+    right: 80px;
   }
   .navbar .nav_3 a button {
     margin: 0%;
-    position: relative;
-    right: 40px;
     text-align: center;
     transition: 0.25s transform;
   }
@@ -922,10 +930,21 @@ footer .content_redes .redes a:hover {
   color: #76448A;
 }
 
-footer .content_redes {
-  display: block;
-  text-align: center;
+@media only screen and (max-width: 480px) {
+  footer .content_redes {
+    display: block;
+    text-align: center;
+  }
+  footer .content_redes .redes {
+    margin-top: 2rem;
+  }
 }
-footer .content_redes .redes {
-  margin-top: 2rem;
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  footer ter .content_redes {
+    display: block;
+    text-align: center;
+  }
+  footer ter .content_redes .redes {
+    margin-top: 2rem;
+  }
 }

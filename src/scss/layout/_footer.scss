@@ -58,12 +58,27 @@ footer{
 
 //Versión responsive
 footer{
-    .content_redes{
-        display: block;
-        text-align: center;
+    @include m.phone{
+        .content_redes{
+            display: block;
+            text-align: center;
+    
+            .redes{
+                margin-top: 2rem;
+            }
+        }
+    }
 
-        .redes{
-            margin-top: 2rem;
+    ter{
+        @include m.tablet{
+            .content_redes{
+                display: block;
+                text-align: center;
+        
+                .redes{
+                    margin-top: 2rem;
+                }
+            }
         }
     }
 }
