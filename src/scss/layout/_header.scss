@@ -18,6 +18,11 @@ header{
     }
 }
 
+@include m.desktop{
+    header{
+        height: auto;
+    }
+}
 .navbar{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -302,6 +307,41 @@ header{
             }           
         }
     }
+
+    @include m.desktop{
+        .image{
+           display: none;
+        }
+        .nav_1-off{
+            padding-left: 8rem;
+            ul{
+                li{
+                    width: 65px;
+                }
+            }
+        }
+        .nav_3{ 
+            display: flex;
+            position: relative;
+            right: 20px;
+        }
+    }
+
+    @include m.desktopXl{
+        .nav_1-off{
+            ul{
+                li{
+                    width: 65px;
+                }
+            }
+        }
+
+        .nav_3{
+            display: flex;
+            position: relative;
+            right: 50px;
+        }
+    }
 }
 
 //Versión desktop
@@ -346,19 +386,19 @@ header{
 
     .content_2{
         video{
-            width: 600px;
-            height: 600px;
+            width: 90%;
             -moz-border-radius: 50%;
             -webkit-border-radius: 50%;
             border-radius: 50%;        
-            margin-top: 3rem;
+            margin-top: 8rem;
+            box-shadow: 0 0 20px 1px v.$azul;
 
         }
        
     }
 }
 
-//Versión resposive
+//Versión responsive
 .all_content{
     @include m.phone{
         display: block;
@@ -431,6 +471,18 @@ header{
            video{
             display: none;
            }
+        }
+    }
+
+    @include m.desktop{
+        display: block;
+
+        .content_2{
+            text-align: center;
+            video{
+                width: 60%;
+                margin-bottom: 2rem;
+            }
         }
     }
 }

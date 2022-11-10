@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="build/css/app.css">
 </head>
-<body >
+<body>
     <header>
         <nav class="navbar">
             <div class="image">
@@ -151,72 +151,79 @@
        
     </main>
 
-    <h2 class="opinion_title">
+    <section class="seccion_opiniones">
+        <h2 class="opinion_title">
             Opiniones de personas
-    </h2>
+        </h2>
 
-    <section>
-        <div class="opinion_content">
-            <img src="img/comillas.png" alt="comillas" class="comillas">
-            <p class="opinion_paragraph">
-                El curso me ha ayudado mucho con mi vida
-            </p>
-            <hr>   
-            <div class="person">
-                <img src="img/perfil.png" alt="">
-                <div class="date">
-                    <h4>José Luis</h4>
-                    <p class="parragraph_date">Software developer</p>
-                </div>
-            </div>   
+        <div class="opiniones">
+            <div class="opinion_content">
+                <img src="src/img/comillas.png" alt="comillas" class="comillas">
+                <p class="opinion_paragraph">
+                    El curso me ha ayudado mucho con mi vida
+                </p>
+                <hr>   
+                <div class="person">
+                    <img src="/src/img/perfil.png" alt="">
+                    <div class="date">
+                        <h4>José Luis</h4>
+                        <p class="parragraph_date">Software developer</p>
+                    </div>
+                </div>   
+            </div>
+
+            <div class="opinion_content">
+                <img src="src/img/comillas.png" alt="comillas" class="comillas">
+                <p class="opinion_paragraph">
+                    El curso me ha ayudado mucho con mi vida
+                </p>
+                <hr>   
+                <div class="person">
+                    <img src="/src/img/perfil.png" alt="">
+                    <div class="date">
+                        <h4>José Luis</h4>
+                        <p class="parragraph_date">Software developer</p>
+                    </div>
+                </div>   
+            </div>
+
+            <div class="opinion_content">
+                <img src="src/img/comillas.png" alt="comillas" class="comillas">
+                <p class="opinion_paragraph">
+                    El curso me ha ayudado mucho con mi vida
+                </p>
+                <hr>   
+                <div class="person">
+                    <img src="/src/img/perfil.png" alt="">
+                    <div class="date">
+                        <h4>José Luis</h4>
+                        <p class="parragraph_date">Software developer</p>
+                    </div>
+                </div>   
+            </div>
         </div>
 
-        <div class="opinion_content">
-            <img src="img/comillas.png" alt="comillas" class="comillas">
-            <p class="opinion_paragraph">
-                El curso me ha ayudado mucho con mi vida
-            </p>
-            <hr>   
-            <div class="person">
-                <img src="img/perfil.png" alt="">
-                <div class="date">
-                    <h4>José Luis</h4>
-                    <p class="parragraph_date">Software developer</p>
-                </div>
-            </div>   
-        </div>
-
-        <div class="opinion_content">
-            <img src="img/comillas.png" alt="comillas" class="comillas">
-            <p class="opinion_paragraph">
-                El curso me ha ayudado mucho con mi vida
-            </p>
-            <hr>   
-            <div class="person">
-                <img src="img/perfil.png" alt="">
-                <div class="date">
-                    <h4>José Luis</h4>
-                    <p class="parragraph_date">Software developer</p>
-                </div>
-            </div>   
-        </div>
+        
     </section>
 
     <footer>
-        <h3 class="title_footer">Éxitos</h3>
-        <div class="info">
-            <a href="#">Sobre mí</a>
-            <a href="#">Pólitica de privacidad</a>
-            <a href="#">Ayuda</a>
+        <div class="content_exito">
+            <h3 class="title_footer">Éxitos</h3>
+            <div class="info">
+                <a href="#">Sobre mí</a>
+                <a href="#">Pólitica de privacidad</a>
+                <a href="#">Ayuda</a>
+            </div>
         </div>
+       
 
         <div class="content_redes">
-            <div>
+            <div class="copy">
                 <p>&copy; 2022 Luis Gabriel Buelvas Romero. Todos los derechos reservados</p>
             </div>
 
             <div class="redes">
-                <a href="#"><i class="fa-brands fa-instagram"></i> </a>              
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>              
                 <a href="#"><i class="fa-brands fa-youtube"></i></a>
             </div>
         </div>

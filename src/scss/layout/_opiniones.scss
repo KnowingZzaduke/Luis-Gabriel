@@ -1,0 +1,119 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.seccion_opiniones{
+    height: auto;
+    background-color: v.$gris;
+
+    h2{
+        font-size: v.$titulo;
+        padding-top: 2rem;
+        text-align: center;
+
+    }
+    .opiniones{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 50px;
+        margin-top: 4rem;
+
+        .opinion_content{
+            width: 400px;
+            height: 300px;
+            background-color: v.$azulClaro;
+            border-radius: 5px;
+            box-shadow: 0 0 10px 1px v.$negro;
+            margin: 0% auto;
+            margin-top: 2rem;
+            padding-left: 10px;
+            margin-bottom: 4rem;
+
+            p{
+                color:  v.$blanco;
+                padding-bottom: 1rem;
+            }
+
+        
+            .comillas{
+                width: 80px;
+            }
+    
+            .person{
+                display: flex;
+                padding-top: 1rem;
+    
+    
+                img{
+                    width: 50px;
+                }
+
+                h4{
+                    color: v.$blanco;
+                    padding-left: 1rem;
+                }
+
+                p{
+                    color: v.$blanco;
+                    padding-left: 1rem;
+                }
+            }
+        }
+    }
+   
+}
+
+//Versión responsive
+.seccion_opiniones{
+    @include m.phone{
+        .opinion_title{
+            font-size: 2.5rem;
+        }
+
+        .opiniones{
+            display: block;
+            
+            .opinion_content{
+                width: 300px;
+                height: 300px;
+                margin: 0% auto;
+                margin-top: 2rem;
+            }
+        }
+    }
+
+    @include m.tablet{
+        .opinion_title{
+            font-size: 2.5rem;
+        }
+
+        .opiniones{
+            display: block;
+            
+            .opinion_content{
+                width: 400px;
+                height: 300px;
+                margin: 0% auto;
+                margin-top: 2rem;
+            }
+        }
+    }
+
+    @include m.desktop{
+        .opiniones{
+            display: block;
+        }
+    }
+
+    @include m.desktopXl{
+        .opiniones{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+
+            .opinion_content{
+                margin: 0% auto;
+                margin-top: 2rem;
+            }
+        }
+
+    }
+}

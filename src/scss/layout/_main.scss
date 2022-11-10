@@ -75,7 +75,7 @@ main{
             
             .cursos{
                 display: grid;
-                grid-template-columns: repeat(2, 1fr);
+                grid-template-columns: repeat(1, 1fr);
 
                 .curso{
                     width: 300px;
@@ -88,10 +88,24 @@ main{
     @include m.desktop{
         .main{
             display: block;
+
+            .cursos{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+            }
         }
-        .cursos{
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
+       
+    }
+
+    @include m.desktopXl{
+        .main{
+            display: block;
+
+            .cursos{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+            }
         }
+
     }
 }

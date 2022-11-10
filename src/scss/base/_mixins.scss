@@ -21,9 +21,9 @@
     }
 }
 
-//Computado grande
+//Computador grande
 @mixin desktopXl {
-    @media only screen and (min-width: v.$desktopXl){
+    @media only screen and (min-width: v.$desktopXl-min) and (max-width: v.$desktopXl-max){
         @content;
     }
 }
