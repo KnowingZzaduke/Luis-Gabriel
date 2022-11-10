@@ -643,7 +643,8 @@ header {
     display: block;
   }
   .all_content .content_1 {
-    padding-left: 5px;
+    padding-left: 10px;
+    padding-top: 4rem;
   }
   .all_content .content_1 .section_info {
     padding: 0%;
@@ -651,7 +652,6 @@ header {
   .all_content .content_1 .section_info h1 {
     width: auto;
     font-size: 2.5rem;
-    padding-top: 3rem;
   }
   .all_content .content_1 .section_info p {
     width: auto;
