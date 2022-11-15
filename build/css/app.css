@@ -1177,3 +1177,15 @@ footer .content_redes .redes a:hover {
     display: none;
   }
 }
+@media only screen and (min-width: 769px) and (max-width: 968px) {
+  .all_content {
+    display: block;
+    height: auto;
+    padding-top: 5rem;
+  }
+  .all_content .content_figura-bienvenida {
+    justify-content: center;
+    width: 100%;
+    margin: 0%;
+  }
+}

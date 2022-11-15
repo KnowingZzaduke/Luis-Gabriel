@@ -124,5 +124,17 @@
         display: none;
     }
    }
+
+   @include m.desktop{
+    display: block;
+    height: auto;
+    padding-top: 5rem;
+
+    .content_figura-bienvenida{
+        justify-content: center;
+        width: 100%;
+        margin: 0%;
+    }
+   }
 }
 
