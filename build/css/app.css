@@ -359,6 +359,7 @@ header {
   position: fixed;
   top: 0%;
   width: 100%;
+  z-index: 2;
 }
 .navbar .image img {
   width: 100px;
@@ -1066,5 +1067,113 @@ footer .content_redes .redes a:hover {
   }
   .content_formulario-iniciar .formulario_iniciar .content_button button {
     width: 70%;
+  }
+}
+
+.encabezado {
+  background-color: #326EF7;
+}
+
+.all_content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 800px;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+}
+.all_content .content_bienvenida {
+  text-align: center;
+}
+.all_content .content_bienvenida .content_titulo-bienvenida h1 {
+  font-size: 4rem;
+  color: white;
+}
+.all_content .content_bienvenida .content_parrafo-bienvenida p {
+  font-size: 1.5rem;
+  line-height: 2;
+  color: white;
+}
+.all_content .content_bienvenida .content_button-bienvenida button {
+  padding: 20px 60px 20px 60px;
+  border-radius: 5px;
+  border: 2px solid black;
+  transition: 0.25s;
+  color: white;
+  background-color: #0E45C4;
+}
+.all_content .content_bienvenida .content_button-bienvenida button:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.all_content .content_figura-bienvenida {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row: 1/1;
+  grid-column: 1/2;
+  width: 700px;
+  height: 600px;
+  padding-top: 3rem;
+}
+.all_content .content_figura-bienvenida .figura_1 {
+  background-image: url(/src/img/finanzas.jpg);
+  background-size: cover;
+  background-position: -150px;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  border: 4px dashed #0E45C4;
+  transform: translateY(200px) translateX(200px);
+  z-index: 1;
+}
+.all_content .content_figura-bienvenida .figura_2 {
+  background-color: transparent;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  border: 4px dashed #0E45C4;
+  background-image: url(/src/img/finanza1.jpg);
+  background-size: cover;
+}
+.all_content .content_figura-bienvenida .figura_3 {
+  background-color: transparent;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  border: 4px dashed #0E45C4;
+  transform: translateX(-200px) translateY(200px);
+  background-image: url(/src/img/finanza2.jpg);
+  background-size: cover;
+}
+
+@media only screen and (max-width: 480px) {
+  .all_content {
+    display: block;
+    padding-top: 5rem;
+  }
+  .all_content .content_bienvenida {
+    width: 100%;
+  }
+  .all_content .content_bienvenida .content_button-bienvenida {
+    margin-top: 1rem;
+  }
+  .all_content .content_figura-bienvenida {
+    display: none;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .all_content {
+    display: block;
+    padding-top: 7rem;
+  }
+  .all_content .content_bienvenida {
+    width: 100%;
+  }
+  .all_content .content_bienvenida .content_button-bienvenida {
+    margin-top: 1rem;
+  }
+  .all_content .content_figura-bienvenida {
+    display: none;
   }
 }

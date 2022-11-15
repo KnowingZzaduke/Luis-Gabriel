@@ -1,0 +1,128 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.encabezado{
+    background-color: v.$azulClaro;
+}
+
+.all_content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 800px;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+
+    .content_bienvenida{
+        text-align: center;
+        .content_titulo-bienvenida{
+            h1{
+                font-size: v.$titulo;
+                color: v.$blanco;
+            }
+        }
+
+        .content_parrafo-bienvenida{
+            p{
+                font-size: 1.5rem;
+                line-height: 2;
+                color: v.$blanco;
+            }
+        }
+
+        .content_button-bienvenida{
+            button{
+                padding: 20px 60px 20px 60px;
+                border-radius: 5px;
+                border: 2px solid v.$negro;
+                transition: .25s;
+                color: v.$blanco;
+                background-color: v.$azul;
+
+                &:hover{
+                    transform: scale(1.1);
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .content_figura-bienvenida{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-row: 1/1;
+        grid-column: 1/2;
+        width: 700px;
+        height: 600px;
+        padding-top: 3rem;
+        .figura_1{
+            background-image: url(/src/img/finanzas.jpg);
+            background-size: cover;
+            background-position: -150px;
+            background-repeat: no-repeat;
+            border-radius: 50%;
+            width: 300px;
+            height: 300px;
+            border: 4px dashed v.$azul;
+            transform: translateY(200px) translateX(200px);
+            z-index: 1;
+        }
+
+        .figura_2{
+            background-color: transparent;
+            border-radius: 50%;
+            width: 300px;
+            height: 300px;
+            border: 4px dashed v.$azul;
+            background-image: url(/src/img/finanza1.jpg);
+            background-size: cover;
+        }
+
+        .figura_3{
+            background-color: transparent;
+            border-radius: 50%;
+            width: 300px;
+            height: 300px;
+            border: 4px dashed v.$azul;
+            transform: translateX(-200px) translateY(200px);
+            background-image: url(/src/img/finanza2.jpg);
+            background-size: cover;
+        }
+    }
+}
+
+//Versión responsive
+.all_content{
+   @include m.phone{
+    display: block;
+    padding-top: 5rem;
+
+    .content_bienvenida{
+        width: 100%;
+
+        .content_button-bienvenida{
+            margin-top: 1rem;
+        }
+    }
+    .content_figura-bienvenida{
+        display: none;
+    }
+   }
+
+   @include m.tablet{
+    display: block;
+    padding-top: 7rem;
+
+    .content_bienvenida{
+        width: 100%;
+
+        .content_button-bienvenida{
+            margin-top: 1rem;
+        }
+    }
+    .content_figura-bienvenida{
+        display: none;
+    }
+   }
+}
+
