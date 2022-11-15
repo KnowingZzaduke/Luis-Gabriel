@@ -949,3 +949,62 @@ footer .content_redes .redes a:hover {
     margin-top: 2rem;
   }
 }
+
+.content_formulario-iniciar {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 30px;
+  height: 800px;
+}
+.content_formulario-iniciar .formulario_iniciar {
+  background-color: #326EF7;
+  width: 40%;
+  margin: 0% auto;
+  border-radius: 5px;
+  box-shadow: 0 0 20px 1px #0E45C4;
+}
+.content_formulario-iniciar .formulario_iniciar .content_titulo-login h1 {
+  font-size: 4rem;
+  color: white;
+}
+.content_formulario-iniciar .formulario_iniciar .content_campos .content_campo {
+  margin-top: 2rem;
+}
+.content_formulario-iniciar .formulario_iniciar .content_campos .content_campo input {
+  border-radius: 3px;
+  border-color: black;
+  border: 2px solid;
+  height: 40px;
+  width: 40%;
+}
+.content_formulario-iniciar .formulario_iniciar .content_button {
+  margin-top: 3rem;
+}
+.content_formulario-iniciar .formulario_iniciar .content_button button {
+  width: 40%;
+  border: 1px solid;
+  border-radius: 3px;
+  background-color: #0E45C4;
+  height: 50px;
+  transition: 0.25s;
+  color: white;
+  box-shadow: 0 0 15px 1px #0E45C4;
+}
+.content_formulario-iniciar .formulario_iniciar .content_button button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  box-shadow: 0 0 25px 1px #0E45C4;
+}
+.content_formulario-iniciar .formulario_iniciar .content_no-cuenta {
+  margin-top: 3rem;
+  padding-bottom: 1rem;
+}
+.content_formulario-iniciar .formulario_iniciar .content_no-cuenta a {
+  color: white;
+  text-decoration: none;
+}
+.content_formulario-iniciar .formulario_iniciar .content_no-cuenta a:hover {
+  text-decoration: underline;
+}
