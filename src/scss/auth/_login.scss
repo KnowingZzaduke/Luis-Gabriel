@@ -6,15 +6,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    top: 30px;
-    height: 800px;
+    height: 100vh;
+    background-image: url(/src/img/Croods\ -\ Windows.png);
+    background-size: cover;
 
     .formulario_iniciar{
         background-color: v.$azulClaro;
-        width: 40%;
+        width: 50%;
         margin: 0% auto;
         border-radius: 5px;
         box-shadow: 0 0 20px 1px v.$azul;
+        border: 2px solid v.$negro;
 
         .content_titulo-login{
             h1{
@@ -27,12 +29,12 @@
             .content_campo{
                 margin-top: 2rem;
 
-                input{
+                .campo{
                     border-radius: 3px;
                     border-color: v.$negro;
                     border: 2px solid;
                     height: 40px;
-                    width: 40%;
+                    width: 50%;
                 }
             }
         }
@@ -41,7 +43,7 @@
             margin-top: 3rem;
 
             button{
-                width: 40%;
+                width: 50%;
                 border: 1px solid;
                 border-radius: 3px;
                 background-color: v.$azul;
@@ -72,6 +74,114 @@
                 }
             }
 
+        }
+    }
+}
+
+//Versión responsive
+.content_formulario-iniciar{
+    @include m.phone{
+        .formulario_iniciar{
+            width: 80%;
+
+            .content_titulo-login{
+                h1{
+                    font-size: 2rem;
+                }
+            }
+
+            .content_campos{
+                .content_campo{
+                    .campo{
+                        width: 70%;
+                    }
+                }
+            }
+
+            .content_button{
+                button{
+                    width: 70%;
+                }
+            }
+        }
+    
+    }
+
+    @include m.tablet{
+        .formulario_iniciar{
+            width: 80%;
+
+            .content_titulo-login{
+                h1{
+                    font-size: 2rem;
+                }
+            }
+
+            .content_campos{
+                .content_campo{
+                    .campo{
+                        width: 70%;
+                    }
+                }
+            }
+
+            .content_button{
+                button{
+                    width: 70%;
+                }
+            }
+        }
+    }
+
+    @include m.desktop{
+        .formulario_iniciar{
+            width: 60%;
+
+            .content_titulo-login{
+                h1{
+                    font-size: 2rem;
+                }
+            }
+
+            .content_campos{
+                .content_campo{
+                    .campo{
+                        width: 70%;
+                    }
+                }
+            }
+
+            .content_button{
+                button{
+                    width: 70%;
+                }
+            }
+        }
+    }
+
+    @include m.desktopXl{
+        .formulario_iniciar{
+            width: 50%;
+
+            .content_titulo-login{
+                h1{
+                    font-size: 2rem;
+                }
+            }
+
+            .content_campos{
+                .content_campo{
+                    .campo{
+                        width: 70%;
+                    }
+                }
+            }
+
+            .content_button{
+                button{
+                    width: 70%;
+                }
+            }
         }
     }
 }

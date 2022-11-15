@@ -955,15 +955,17 @@ footer .content_redes .redes a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  top: 30px;
-  height: 800px;
+  height: 100vh;
+  background-image: url(/src/img/Croods\ -\ Windows.png);
+  background-size: cover;
 }
 .content_formulario-iniciar .formulario_iniciar {
   background-color: #326EF7;
-  width: 40%;
+  width: 50%;
   margin: 0% auto;
   border-radius: 5px;
   box-shadow: 0 0 20px 1px #0E45C4;
+  border: 2px solid black;
 }
 .content_formulario-iniciar .formulario_iniciar .content_titulo-login h1 {
   font-size: 4rem;
@@ -972,18 +974,18 @@ footer .content_redes .redes a:hover {
 .content_formulario-iniciar .formulario_iniciar .content_campos .content_campo {
   margin-top: 2rem;
 }
-.content_formulario-iniciar .formulario_iniciar .content_campos .content_campo input {
+.content_formulario-iniciar .formulario_iniciar .content_campos .content_campo .campo {
   border-radius: 3px;
   border-color: black;
   border: 2px solid;
   height: 40px;
-  width: 40%;
+  width: 50%;
 }
 .content_formulario-iniciar .formulario_iniciar .content_button {
   margin-top: 3rem;
 }
 .content_formulario-iniciar .formulario_iniciar .content_button button {
-  width: 40%;
+  width: 50%;
   border: 1px solid;
   border-radius: 3px;
   background-color: #0E45C4;
@@ -1007,4 +1009,61 @@ footer .content_redes .redes a:hover {
 }
 .content_formulario-iniciar .formulario_iniciar .content_no-cuenta a:hover {
   text-decoration: underline;
+}
+
+@media only screen and (max-width: 480px) {
+  .content_formulario-iniciar .formulario_iniciar {
+    width: 80%;
+  }
+  .content_formulario-iniciar .formulario_iniciar .content_titulo-login h1 {
+    font-size: 2rem;
+  }
+  .content_formulario-iniciar .formulario_iniciar .content_campos .content_campo .campo {
+    width: 70%;
+  }
+  .content_formulario-iniciar .formulario_iniciar .content_button button {
+    width: 70%;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .content_formulario-iniciar .formulario_iniciar {
+    width: 80%;
+  }
+  .content_formulario-iniciar .formulario_iniciar .content_titulo-login h1 {
+    font-size: 2rem;
+  }
+  .content_formulario-iniciar .formulario_iniciar .content_campos .content_campo .campo {
+    width: 70%;
+  }
+  .content_formulario-iniciar .formulario_iniciar .content_button button {
+    width: 70%;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 968px) {
+  .content_formulario-iniciar .formulario_iniciar {
+    width: 60%;
+  }
+  .content_formulario-iniciar .formulario_iniciar .content_titulo-login h1 {
+    font-size: 2rem;
+  }
+  .content_formulario-iniciar .formulario_iniciar .content_campos .content_campo .campo {
+    width: 70%;
+  }
+  .content_formulario-iniciar .formulario_iniciar .content_button button {
+    width: 70%;
+  }
+}
+@media only screen and (min-width: 969px) and (max-width: 1200px) {
+  .content_formulario-iniciar .formulario_iniciar {
+    width: 50%;
+  }
+  .content_formulario-iniciar .formulario_iniciar .content_titulo-login h1 {
+    font-size: 2rem;
+  }
+  .content_formulario-iniciar .formulario_iniciar .content_campos .content_campo .campo {
+    width: 70%;
+  }
+  .content_formulario-iniciar .formulario_iniciar .content_button button {
+    width: 70%;
+  }
 }
