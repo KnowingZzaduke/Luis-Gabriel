@@ -814,6 +814,7 @@ main .title_curso {
   grid-template-columns: repeat(3, 1fr);
   gap: 50px;
   margin-top: 4rem;
+  padding-bottom: 4rem;
 }
 .seccion_opiniones .opiniones .opinion_content {
   width: 400px;
@@ -824,7 +825,6 @@ main .title_curso {
   margin: 0% auto;
   margin-top: 2rem;
   padding-left: 10px;
-  margin-bottom: 4rem;
 }
 .seccion_opiniones .opiniones .opinion_content p {
   color: white;
@@ -941,11 +941,11 @@ footer .content_redes .redes a:hover {
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 768px) {
-  footer ter .content_redes {
+  footer .content_redes {
     display: block;
     text-align: center;
   }
-  footer ter .content_redes .redes {
+  footer .content_redes .redes {
     margin-top: 2rem;
   }
 }

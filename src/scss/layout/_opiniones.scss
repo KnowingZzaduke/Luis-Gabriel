@@ -16,6 +16,8 @@
         grid-template-columns: repeat(3, 1fr);
         gap: 50px;
         margin-top: 4rem;
+        padding-bottom: 4rem;
+
 
         .opinion_content{
             width: 400px;
@@ -26,7 +28,6 @@
             margin: 0% auto;
             margin-top: 2rem;
             padding-left: 10px;
-            margin-bottom: 4rem;
 
             p{
                 color:  v.$blanco;

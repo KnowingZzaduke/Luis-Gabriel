@@ -69,16 +69,16 @@ footer{
         }
     }
 
-    ter{
-        @include m.tablet{
-            .content_redes{
-                display: block;
-                text-align: center;
+
+    @include m.tablet{
+        .content_redes{
+            display: block;
+            text-align: center;
         
                 .redes{
                     margin-top: 2rem;
                 }
             }
         }
-    }
+    
 }
