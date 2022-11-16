@@ -1,0 +1,32 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.header_info{
+    background-color: v.$blanco;
+}
+
+.all_content-beneficios{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    .content_beneficios{
+        .content_titulo-beneficio{
+            h1{
+                text-align: center;
+                font-size: v.$titulo;
+            }
+        }
+
+        .beneficios{
+            .beneficio{
+                display: flex;
+
+                .content_logo-beneficio{
+                    img{
+                        width: 50px;
+                    }
+                }
+            }
+        }
+    }
+}
