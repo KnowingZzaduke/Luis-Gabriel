@@ -51,6 +51,11 @@
 
     .content_imagen-autor{
         text-align: center;
+
+        img{
+            box-shadow: 0 0 10px 1px v.$azul;
+            border-radius: 5px;
+        }
     }
 }
 
@@ -118,7 +123,7 @@
     }
 }
 
-//--Sección curso--**
+//--SECCION CURSO--*******************************************
 .seccion_curso{
     background-color: v.$gris;
 
@@ -166,6 +171,7 @@
     }
 }
 
+//Versión responsive
 .seccion_curso{
     @include m.phone{
         .content_info-seccion-curso{
@@ -236,6 +242,107 @@
 
                 p{
                     width: auto;
+                }
+            }
+        }
+    }
+}
+
+
+//--SECCION MODULOS--*****************************************
+.seccion_modulos{
+    .content_titulo-modulo{
+        h1{
+            text-align: center;
+            font-size: v.$titulo;
+        }
+    }
+    .content_modulo{
+        background-color: v.$azulAguaMarina;
+        width: 70%;
+        height: 400px;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0% auto;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+
+        .modulo{
+            width: 50%;            
+        }
+
+        .content_circulo{
+            .circulo{
+                width: 300px;
+                height: 300px;
+                border-radius: 50%;
+                background-color: v.$azulClaro;
+                opacity: 20%;
+                //Inclinación, Arriba, abajo y espacio que hay entre estos
+                background-image: repeating-linear-gradient(45deg, transparent, transparent 15px, rgba(202, 199, 199, 0.5) 15px, rgba(202, 199, 199, 0.5) 20px);
+                margin-left: 1rem;
+            }
+        }
+       
+        
+
+    }
+}
+
+//Versión responsive
+.seccion_modulos{
+    @include m.phone{
+        .content_modulo{
+            display: block;
+            height: auto;
+           
+            .modulo{
+                width: 90%;
+                margin: 0% auto;  
+                padding-top: 10px;             
+            }
+
+            .content_circulo{
+                .circulo{
+                    width: 200px;
+                    height: 200px;
+                    margin: 0% auto;
+                    margin-top: 1rem;
+                }
+            }
+        }
+    }
+
+    @include m.tablet{
+        .content_modulo{
+            display: block;
+            height: auto;
+           
+            .modulo{
+                width: 90%;
+                margin: 0% auto;  
+                padding-top: 10px;             
+            }
+
+            .content_circulo{
+                .circulo{
+                    width: 200px;
+                    height: 200px;
+                    margin: 0% auto;
+                    margin-top: 1rem;
+                }
+            }
+        }
+    }
+
+    @include m.desktop{
+        .content_modulo{
+            .content_circulo{
+                .circulo{
+                    width: 250px;
+                    height: 250px;
                 }
             }
         }
