@@ -1080,7 +1080,6 @@ footer .content_redes .redes a:hover {
 @media only screen and (max-width: 480px) {
   .encabezado .nav_cerrar a button {
     width: 150px;
-    margin-left: 20px;
   }
 }
 .all_content {
