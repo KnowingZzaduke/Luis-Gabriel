@@ -1215,6 +1215,9 @@ footer .content_redes .redes a:hover {
   grid-template-columns: repeat(2, 1fr);
   text-align: center;
 }
+.cursos .content_catalogo-cursos .content_curso .curso {
+  padding-bottom: 3rem;
+}
 .cursos .content_catalogo-cursos .content_curso .curso .titulo_curso {
   margin-top: 2rem;
 }
