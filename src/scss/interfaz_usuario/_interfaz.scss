@@ -20,7 +20,21 @@
                 button{
                     width: 150px;
                     position: relative;
-                    right: 20px;
+                    right: 5px;
+                }
+            }
+        }
+    }
+}
+
+@include m.tablet{
+    .encabezado{   
+        .nav_cerrar{
+            a{
+                button{
+                    width: 150px;
+                    position: relative;
+                    right: 10px;
                 }
             }
         }
