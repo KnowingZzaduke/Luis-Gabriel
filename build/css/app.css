@@ -1306,6 +1306,11 @@ footer .content_redes .redes a:hover {
 .header_info {
   background-color: white;
 }
+@media only screen and (max-width: 480px) {
+  .header_info .nav .nav_cerrar a button {
+    width: 150px;
+  }
+}
 
 .all_content-beneficios {
   height: 820px;

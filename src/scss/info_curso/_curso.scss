@@ -3,6 +3,18 @@
 
 .header_info{
     background-color: v.$blanco;
+
+    @include m.phone{
+        .nav{
+            .nav_cerrar{
+                a{
+                    button{
+                        width: 150px;
+                    }
+                }
+            }
+        }
+    }
 }
 
 .all_content-beneficios{
