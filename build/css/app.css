@@ -1354,9 +1354,6 @@ footer .content_redes .redes a:hover {
   .all_content-beneficios .content_beneficios .content_titulo-beneficio .titulo_beneficio {
     width: auto;
   }
-  .all_content-beneficios .content_beneficios .beneficios {
-    padding-left: 1rem;
-  }
   .all_content-beneficios .content_beneficios .beneficios .beneficio {
     width: 311px;
     margin: 0% auto;
@@ -1370,6 +1367,14 @@ footer .content_redes .redes a:hover {
   }
   .all_content-beneficios .content_beneficios .beneficios .beneficio .content_info-beneficio p {
     width: 260px;
+  }
+  .all_content-beneficios .content_imagen-autor {
+    text-align: center;
+  }
+  .all_content-beneficios .content_imagen-autor img {
+    box-shadow: 0 0 10px 1px #0E45C4;
+    border-radius: 5px;
+    margin-top: 2rem;
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 768px) {

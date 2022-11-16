@@ -66,6 +66,7 @@
         height: auto;
         display: block;
         text-align: center;
+
         .content_beneficios{
             .content_titulo-beneficio{
                 .titulo_beneficio{
@@ -74,7 +75,6 @@
             }
 
             .beneficios{
-                padding-left: 1rem;
                 .beneficio{
                     width: 311px;
                     margin: 0% auto;
@@ -90,6 +90,16 @@
                         }
                     }
                 }
+            }
+         }
+
+         .content_imagen-autor{
+            text-align: center;
+
+            img{
+                box-shadow: 0 0 10px 1px v.$azul;
+                border-radius: 5px;
+                margin-top: 2rem;
             }
         }
     }
