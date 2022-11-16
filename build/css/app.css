@@ -1080,7 +1080,8 @@ footer .content_redes .redes a:hover {
 @media only screen and (max-width: 480px) {
   .encabezado .nav_cerrar a button {
     width: 150px;
-    margin-right: 10px;
+    position: relative;
+    right: 20px;
   }
 }
 .all_content {
@@ -1256,6 +1257,9 @@ footer .content_redes .redes a:hover {
   .cursos .content_catalogo-cursos .content_curso .curso .content_button-curso button {
     margin: 0% auto;
   }
+  .cursos .content_catalogo-cursos .content_curso .curso hr {
+    width: 100%;
+  }
 }
 @media only screen and (min-width: 481px) and (max-width: 768px) {
   .cursos .content_catalogo-cursos .content_curso {
@@ -1269,6 +1273,9 @@ footer .content_redes .redes a:hover {
   }
   .cursos .content_catalogo-cursos .content_curso .curso .content_button-curso button {
     margin: 0% auto;
+  }
+  .cursos .content_catalogo-cursos .content_curso .curso hr {
+    width: 100%;
   }
 }
 @media only screen and (min-width: 769px) and (max-width: 968px) {

@@ -19,7 +19,8 @@
             a{
                 button{
                     width: 150px;
-                    margin-right: 10px;
+                    position: relative;
+                    right: 20px;
                 }
             }
         }
@@ -245,6 +246,10 @@
                             margin: 0% auto;
                         }
                     }
+
+                    hr{
+                        width: 100%;
+                    }
                 }
             }
         }
@@ -268,6 +273,10 @@
                         button{
                             margin: 0% auto;
                         }
+                    }
+
+                    hr{
+                        width: 100%;
                     }
                 }
             }
