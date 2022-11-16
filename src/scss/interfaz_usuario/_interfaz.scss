@@ -3,6 +3,27 @@
 
 .encabezado{
     background-color: v.$azulClaro;
+
+    .nav_cerrar{
+        a{
+            button{
+                width: 150px;
+            }
+        }
+    }
+}
+
+@include m.phone{
+    .encabezado{   
+        .nav_cerrar{
+            a{
+                button{
+                    width: 150px;
+                    margin-left: 20px;
+                }
+            }
+        }
+    }
 }
 
 .all_content{
