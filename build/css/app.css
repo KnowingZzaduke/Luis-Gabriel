@@ -1308,16 +1308,90 @@ footer .content_redes .redes a:hover {
 }
 
 .all_content-beneficios {
+  height: 820px;
+  padding-top: 4rem;
+  align-items: center;
   display: grid;
+  gap: 120px;
   grid-template-columns: repeat(2, 1fr);
 }
-.all_content-beneficios .content_beneficios .content_titulo-beneficio h1 {
-  text-align: center;
+.all_content-beneficios .content_beneficios .content_titulo-beneficio .titulo_beneficio {
+  width: 426px;
   font-size: 4rem;
+  margin: 0% auto;
 }
 .all_content-beneficios .content_beneficios .beneficios .beneficio {
+  margin: 0% auto;
+  margin-top: 3rem;
+  width: 500px;
   display: flex;
 }
 .all_content-beneficios .content_beneficios .beneficios .beneficio .content_logo-beneficio img {
   width: 50px;
+  border-radius: 50px;
+}
+.all_content-beneficios .content_beneficios .beneficios .beneficio .content_info-beneficio h2 {
+  width: 100%;
+}
+.all_content-beneficios .content_beneficios .beneficios .beneficio .content_info-beneficio p {
+  width: 426px;
+}
+.all_content-beneficios .content_imagen-autor {
+  text-align: center;
+}
+
+@media only screen and (max-width: 480px) {
+  .all_content-beneficios {
+    margin-top: 2rem;
+    height: auto;
+    display: block;
+    text-align: center;
+  }
+  .all_content-beneficios .content_beneficios .content_titulo-beneficio .titulo_beneficio {
+    width: auto;
+  }
+  .all_content-beneficios .content_beneficios .beneficios {
+    padding-left: 1rem;
+  }
+  .all_content-beneficios .content_beneficios .beneficios .beneficio {
+    width: 311px;
+    margin: 0% auto;
+    margin-top: 2rem;
+  }
+  .all_content-beneficios .content_beneficios .beneficios .beneficio .content_info-beneficio {
+    width: auto;
+  }
+  .all_content-beneficios .content_beneficios .beneficios .beneficio .content_info-beneficio h2 {
+    width: auto;
+  }
+  .all_content-beneficios .content_beneficios .beneficios .beneficio .content_info-beneficio p {
+    width: 260px;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .all_content-beneficios {
+    display: block;
+    height: auto;
+    margin-top: 2rem;
+  }
+  .all_content-beneficios .content_imagen-autor {
+    text-align: center;
+    margin-top: 2rem;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 968px) {
+  .all_content-beneficios {
+    display: block;
+    margin-top: 2rem;
+    height: auto;
+  }
+  .all_content-beneficios .content_imagen-autor {
+    text-align: center;
+    margin-top: 2rem;
+  }
+}
+@media only screen and (min-width: 969px) and (max-width: 1200px) {
+  .all_content-beneficios .content_beneficios {
+    padding-left: 1rem;
+  }
 }

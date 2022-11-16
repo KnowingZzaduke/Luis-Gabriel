@@ -6,27 +6,114 @@
 }
 
 .all_content-beneficios{
+    height: 820px;
+    padding-top: 4rem;
+    align-items: center;
     display: grid;
+    gap: 120px;
     grid-template-columns: repeat(2, 1fr);
 
     .content_beneficios{
         .content_titulo-beneficio{
-            h1{
-                text-align: center;
+            .titulo_beneficio{
+                width: 426px;
                 font-size: v.$titulo;
+                margin: 0% auto;
+
             }
         }
-
         .beneficios{
             .beneficio{
+                margin: 0% auto;
+                margin-top: 3rem;
+                width: 500px;
                 display: flex;
 
                 .content_logo-beneficio{
                     img{
                         width: 50px;
+                        border-radius: 50px;
+                    }
+                }
+
+                .content_info-beneficio{
+                    h2{
+                        width: 100%;
+                    }
+
+                    p{
+                        width: 426px;
                     }
                 }
             }
+        }
+    }
+
+    .content_imagen-autor{
+        text-align: center;
+    }
+}
+
+//Versión responsive
+.all_content-beneficios{
+    @include m.phone{
+        margin-top: 2rem;
+        height: auto;
+        display: block;
+        text-align: center;
+        .content_beneficios{
+            .content_titulo-beneficio{
+                .titulo_beneficio{
+                    width: auto;
+                }
+            }
+
+            .beneficios{
+                padding-left: 1rem;
+                .beneficio{
+                    width: 311px;
+                    margin: 0% auto;
+                    margin-top: 2rem;
+                    .content_info-beneficio{
+                        width: auto;
+                        h2{
+                            width: auto;
+                        }
+
+                        p{
+                            width: 260px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @include m.tablet{
+            display: block;
+            height: auto;
+            margin-top: 2rem;
+
+            .content_imagen-autor{
+                text-align: center;
+                margin-top: 2rem;
+            }
+    }
+
+    @include m.desktop{
+        display: block;
+        margin-top: 2rem;
+        height: auto;
+
+        .content_imagen-autor{
+            text-align: center;
+            margin-top: 2rem;
+        }
+    }
+
+    @include m.desktopXl{
+        .content_beneficios{
+            padding-left: 1rem;
         }
     }
 }
