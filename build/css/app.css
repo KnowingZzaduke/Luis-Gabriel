@@ -1189,3 +1189,89 @@ footer .content_redes .redes a:hover {
     margin: 0%;
   }
 }
+
+.cursos .content_titulo-catalogo h1 {
+  font-size: 4rem;
+  text-align: center;
+}
+.cursos .content_catalogo-cursos .content_curso {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  text-align: center;
+}
+.cursos .content_catalogo-cursos .content_curso .curso .titulo_curso {
+  margin-top: 2rem;
+}
+.cursos .content_catalogo-cursos .content_curso .curso .imagen_curso img {
+  width: 500px;
+  border-radius: 5px;
+  border: 1px solid black;
+  margin-top: 1rem;
+}
+.cursos .content_catalogo-cursos .content_curso .curso .content_button-curso {
+  text-align: end;
+  width: 500px;
+  margin: 0% auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.cursos .content_catalogo-cursos .content_curso .curso .content_button-curso button {
+  padding: 15px 40px;
+  background-color: #0E45C4;
+  border: 1px solid black;
+  transition: 0.25s;
+  color: white;
+  border-radius: 3px;
+}
+.cursos .content_catalogo-cursos .content_curso .curso .content_button-curso button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.cursos .content_catalogo-cursos .content_curso .curso hr {
+  width: 500px;
+  margin: 0% auto;
+  opacity: 20%;
+}
+
+@media only screen and (max-width: 480px) {
+  .cursos .content_catalogo-cursos .content_curso {
+    display: block;
+  }
+  .cursos .content_catalogo-cursos .content_curso .curso .imagen_curso img {
+    width: 300px;
+  }
+  .cursos .content_catalogo-cursos .content_curso .curso .content_button-curso {
+    text-align: center;
+    width: 100%;
+  }
+  .cursos .content_catalogo-cursos .content_curso .curso .content_button-curso button {
+    margin: 0% auto;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .cursos .content_catalogo-cursos .content_curso {
+    display: block;
+  }
+  .cursos .content_catalogo-cursos .content_curso .curso .imagen_curso img {
+    width: 400px;
+  }
+  .cursos .content_catalogo-cursos .content_curso .curso .content_button-curso {
+    width: 400px;
+  }
+  .cursos .content_catalogo-cursos .content_curso .curso .content_button-curso button {
+    margin: 0% auto;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 968px) {
+  .cursos .content_catalogo-cursos .content_curso {
+    display: block;
+  }
+}
+@media only screen and (min-width: 969px) and (max-width: 1200px) {
+  .cursos .content_catalogo-cursos .content_curso .curso .imagen_curso img {
+    width: 400px;
+  }
+  .cursos .content_catalogo-cursos .content_curso .curso .content_button-curso {
+    width: 400px;
+  }
+}
