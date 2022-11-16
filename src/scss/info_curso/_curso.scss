@@ -117,3 +117,127 @@
         }
     }
 }
+
+//--Sección curso--**
+.seccion_curso{
+    background-color: v.$gris;
+
+    .content_info-seccion-curso{
+        padding: 50px 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        .content_imagen-curso{
+            text-align: center;
+            img{
+                width: 500px;
+                border-radius: 5px;
+                box-shadow: 0 0 5px 1px v.$azul;
+            }
+        }
+
+        .content_info-curso{
+            h1{
+                font-size: 3rem;
+            }
+            p{
+                width: 70%;
+            }
+
+            .content_button-comprar{
+                margin-top: 2rem;
+                a{
+                    button{
+                        padding: 20px 50px;
+                        background-color: v.$azulClaro;
+                        border-radius: 5px;
+                        border: 1px solid v.$negro;
+                        transition: .25s;
+                        color: v.$blanco;
+
+                        &:hover{
+                            cursor: pointer;
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.seccion_curso{
+    @include m.phone{
+        .content_info-seccion-curso{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+
+            .content_imagen-curso{
+                img{
+                    width: 300px;
+                    margin-top: 3rem;
+                    transition: 0.5s;
+                }
+            }
+
+            .content_info-curso{
+                grid-column: 1/2;
+                grid-row: 1/2;
+                text-align: center;
+
+                p{
+                    width: auto;
+                }
+            }
+        }
+    }
+
+    @include m.tablet{
+        .content_info-seccion-curso{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+
+            .content_imagen-curso{
+                img{
+                    width: 400px;
+                    margin-top: 3rem;
+                    transition: 0.5s;
+                }
+            }
+
+            .content_info-curso{
+                grid-column: 1/2;
+                grid-row: 1/2;
+                text-align: center;
+
+                p{
+                    width: auto;
+                }
+            }
+        }
+    }
+
+    @include m.desktop{
+        .content_info-seccion-curso{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+
+            .content_imagen-curso{
+                img{
+                    margin-top: 3rem;
+                    transition: 0.5s;
+                }
+            }
+
+            .content_info-curso{
+                grid-column: 1/2;
+                grid-row: 1/2;
+                text-align: center;
+
+                p{
+                    width: auto;
+                }
+            }
+        }
+    }
+}
