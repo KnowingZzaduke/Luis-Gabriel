@@ -18,7 +18,7 @@
     background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
 
     .formulario_iniciar{
-        background-color: v.$azulClaro;
+        background-color: v.$azul;
         width: 50%;
         margin: 0% auto;
         border-radius: 50px;
@@ -42,13 +42,13 @@
         .content_campos{
             .content_campo{
                 margin-top: 2rem;
-
                 .campo{
                     border-radius: 50px;
                     border-color: v.$negro;
                     border: 2px solid;
                     height: 40px;
                     width: 50%;
+                    opacity: 100%;
                 }
             }
         }

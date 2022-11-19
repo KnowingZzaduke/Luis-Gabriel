@@ -963,7 +963,7 @@ footer .content_redes .redes a:hover {
   background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
 }
 .content_formulario-iniciar .formulario_iniciar {
-  background-color: #326EF7;
+  background-color: #0E45C4;
   width: 50%;
   margin: 0% auto;
   border-radius: 50px;
@@ -987,6 +987,7 @@ footer .content_redes .redes a:hover {
   border: 2px solid;
   height: 40px;
   width: 50%;
+  opacity: 100%;
 }
 .content_formulario-iniciar .formulario_iniciar .content_button {
   margin-top: 3rem;
