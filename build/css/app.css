@@ -966,19 +966,23 @@ footer .content_redes .redes a:hover {
   background-color: #326EF7;
   width: 50%;
   margin: 0% auto;
-  border-radius: 5px;
-  box-shadow: 0 0 20px 1px #0E45C4;
+  border-radius: 50px;
+  box-shadow: 0 0 25px 5px #0E45C4;
   border: 2px solid black;
+  opacity: 80%;
 }
 .content_formulario-iniciar .formulario_iniciar .content_titulo-login h1 {
   font-size: 4rem;
   color: white;
 }
+.content_formulario-iniciar .formulario_iniciar .content_usuario img {
+  width: 100px;
+}
 .content_formulario-iniciar .formulario_iniciar .content_campos .content_campo {
   margin-top: 2rem;
 }
 .content_formulario-iniciar .formulario_iniciar .content_campos .content_campo .campo {
-  border-radius: 3px;
+  border-radius: 50px;
   border-color: black;
   border: 2px solid;
   height: 40px;
@@ -990,7 +994,7 @@ footer .content_redes .redes a:hover {
 .content_formulario-iniciar .formulario_iniciar .content_button button {
   width: 50%;
   border: 1px solid;
-  border-radius: 3px;
+  border-radius: 50px;
   background-color: #0E45C4;
   height: 50px;
   transition: 0.25s;
@@ -1303,6 +1307,10 @@ footer .content_redes .redes a:hover {
   }
 }
 
+.body_info-curso {
+  background-image: repeating-linear-gradient(45deg, transparent, transparent 15px, rgba(202, 199, 199, 0.5) 15px, rgba(202, 199, 199, 0.5) 20px);
+}
+
 .header_info {
   background-color: white;
 }
@@ -1410,9 +1418,6 @@ footer .content_redes .redes a:hover {
   }
 }
 
-.seccion_curso {
-  background-color: #E5E7E9;
-}
 .seccion_curso .content_info-seccion-curso {
   padding: 50px 0;
   display: grid;
@@ -1505,6 +1510,9 @@ footer .content_redes .redes a:hover {
   }
 }
 
+.seccion_modulos {
+  background-color: white;
+}
 .seccion_modulos .content_titulo-modulo h1 {
   text-align: center;
   font-size: 4rem;

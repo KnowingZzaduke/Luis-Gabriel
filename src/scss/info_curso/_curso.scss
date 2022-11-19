@@ -1,6 +1,10 @@
 @use '../base/variables' as v;
 @use '../base/mixins' as m;
 
+.body_info-curso{
+    background-image: repeating-linear-gradient(45deg, transparent, transparent 15px, rgba(202, 199, 199, 0.5) 15px, rgba(202, 199, 199, 0.5) 20px);
+}
+
 .header_info{
     background-color: v.$blanco;
 
@@ -147,8 +151,6 @@
 
 //--SECCION CURSO--*******************************************
 .seccion_curso{
-    background-color: v.$gris;
-
     .content_info-seccion-curso{
         padding: 50px 0;
         display: grid;
@@ -273,6 +275,7 @@
 
 //--SECCION MODULOS--*****************************************
 .seccion_modulos{
+    background-color: v.$blanco;
     .content_titulo-modulo{
         h1{
             text-align: center;
