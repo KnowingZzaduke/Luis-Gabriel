@@ -24,6 +24,7 @@
         border-radius: 50px;
         box-shadow: 0 0 25px 5px v.$azul;
         border: 2px solid v.$negro;
+        backdrop-filter: blur(10px);
         opacity: 80%;
 
         .content_titulo-login{

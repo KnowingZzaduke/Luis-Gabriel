@@ -276,10 +276,12 @@
 //--SECCION MODULOS--*****************************************
 .seccion_modulos{
     background-color: v.$blanco;
+    padding-bottom: 3rem;
     .content_titulo-modulo{
         h1{
             text-align: center;
             font-size: v.$titulo;
+            padding-top: 2rem;
         }
     }
     .content_modulo{
@@ -292,7 +294,7 @@
         justify-content: center;
         margin: 0% auto;
         margin-top: 2rem;
-        margin-bottom: 2rem;
+        padding-bottom: 3rem;
 
         .modulo{
             width: 50%;            

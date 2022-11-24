@@ -1,0 +1,142 @@
+@use '../../base/variables' as v;
+@use '../../base/mixins' as m;
+
+.header_biblioteca{
+    height: auto;
+    background-color: v.$blanco;
+}
+
+ 
+hr{
+    opacity: 50%;
+    height: 5px;
+    margin: 0% auto;
+    background-color: v.$negro;
+}
+
+.content_all-bienvenida-biblioteca{
+    padding: 10px 15px 10px 15px;
+   
+
+    .content_titulo-bienvenida-biblioteca{
+        background-color: v.$azul;
+        width: auto;
+        h1{
+            color: v.$blanco;
+            font-size: v.$titulo;
+            padding: 30px 15px;
+        }
+    }
+
+    .content_descripcion-bienvenida-biblioteca{
+        padding-bottom: 2rem;
+        p{
+            padding: 10px 0;
+            justify-content: center;
+            font-size: v.$parrafo;
+        }
+    }
+
+    .content_acceso-producto{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        .content_imagen-acceso-producto{
+            margin: 20px 0;
+            text-align: center  ;
+            img{
+                width: 500px;
+            }
+        }
+
+        .content_parrafo-acceso-producto{
+            margin: 20px 0;
+
+            h2{
+                margin-bottom: 10px;
+            }
+
+            p{
+                margin-bottom: 10px;
+                line-height: 30px;
+            }
+
+            a{
+                button{
+                    margin-top: 2rem;
+                    padding: 30px 100px;
+                    background-color: v.$azul;
+                    border: none;
+                    border-radius: 5px;
+                    transition: .25s;
+                    color: v.$blanco;
+                    
+                    &:hover{
+                        cursor: pointer;
+                        transform: scale(1.1);
+                        color: v.$morado;
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+//Versión responsive
+
+.content_all-bienvenida-biblioteca{
+    @include m.phone{
+        text-align: center;
+        .content_acceso-producto{
+            display: block;
+
+            .content_imagen-acceso-producto{
+                img{
+                    width: 300px;
+                }
+            }
+        }
+    }
+
+    @include m.tablet{
+        text-align: center;
+        .content_acceso-producto{
+            display: block;
+
+            .content_imagen-acceso-producto{
+                img{
+                    width: 400px;
+                }
+            }
+        }
+    }
+
+    @include m.desktop{
+        text-align: center;
+        .content_acceso-producto{
+            display: block;
+
+            .content_imagen-acceso-producto{
+                img{
+                    width: 500px;
+                }
+            }
+        }
+    }
+
+    @include m.desktopXl{
+        text-align: center;
+        .content_acceso-producto{
+            .content_imagen-acceso-producto{
+                img{
+                    width: 400px;
+                }
+            }
+        }
+    }
+}
+
+
+
+//Sección catálogos de cursos
