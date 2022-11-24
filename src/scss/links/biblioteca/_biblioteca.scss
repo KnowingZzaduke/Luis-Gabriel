@@ -10,8 +10,16 @@
 hr{
     opacity: 50%;
     height: 5px;
-    margin: 0% auto;
+    margin: 20px 0 auto;
     background-color: v.$negro;
+    
+}
+
+.content_dudas{
+    margin-top: 2rem;
+    p{
+        text-align: center;
+    }
 }
 
 .content_all-bienvenida-biblioteca{
@@ -140,3 +148,136 @@ hr{
 
 
 //Sección catálogos de cursos
+.seccion_catalogo-curso{
+    padding: 10px 15px;
+    .content_titulo-catalogo-curso{
+        h2{
+            color: v.$azulClaro;
+            font-size: 2.5rem;
+        }
+    }
+
+    .content_parrafo-catalogo-curso{
+        p{
+            margin: 10px 0;
+        }
+    }
+
+    .content_ofrecer-catalogo-curso{
+        .catalogo{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        .content_image-catalogo{
+            margin: 20px 0;
+            text-align: center;
+            img{
+                width: 500px;
+            }
+        }
+
+        .content_info-detalle-producto{
+            :first-child{
+                margin: 20px 0;
+            }
+
+            .content_boton-detalle-producto{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+
+                button{
+                    width: 100%;
+                    background-color: v.$azul;
+                    border: none;
+                    border-radius: 5px;
+                    transition: .25s;
+                    color: v.$blanco;
+
+                    &:hover{
+                        cursor: pointer;
+                        color: v.$morado;
+                        transform: scale(1.1);
+                    }
+                }
+
+                a{
+                    text-decoration: none;
+                    text-align: center;
+
+                    &:hover{
+                        color: v.$morado;
+                    }
+                }
+            }
+        }
+           
+        }
+    }
+}
+
+//Versión responsive
+.seccion_catalogo-curso{
+   @include m.phone{
+    .content_ofrecer-catalogo-curso{
+        .catalogo{
+            display: block;
+            text-align: center;
+
+            .content_image-catalogo{
+                img{
+                    width: 300px;
+                }
+
+            }
+        }
+    }
+   }
+
+   @include m.tablet{
+    .content_ofrecer-catalogo-curso{
+        .catalogo{
+            display: block;
+            text-align: center;
+
+            .content_image-catalogo{
+                img{
+                    width: 400px;
+                }
+
+            }
+        }
+    }
+   }
+
+   @include m.desktop{
+    .content_ofrecer-catalogo-curso{
+        .catalogo{
+            display: block;
+            text-align: center;
+
+            .content_image-catalogo{
+                img{
+                    width: 500px;
+                }
+
+            }
+        }
+    }
+   }
+
+   @include m.desktopXl{
+    .content_ofrecer-catalogo-curso{
+        .catalogo{
+            text-align: center;
+
+            .content_image-catalogo{
+                img{
+                    width: 400px;
+                }
+
+            }
+        }
+    }
+   }
+}
