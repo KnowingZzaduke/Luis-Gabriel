@@ -78,6 +78,7 @@ hr{
                     border-radius: 5px;
                     transition: .25s;
                     color: v.$blanco;
+                    height: auto;
                     
                     &:hover{
                         cursor: pointer;
@@ -186,18 +187,21 @@ hr{
                 grid-template-columns: repeat(2, 1fr);
                 gap: 20px;
 
-                button{
-                    width: 100%;
-                    background-color: v.$azul;
-                    border: none;
-                    border-radius: 5px;
-                    transition: .25s;
-                    color: v.$blanco;
-
-                    &:hover{
-                        cursor: pointer;
-                        color: v.$morado;
-                        transform: scale(1.1);
+                a{
+                    button{
+                        width: 100%;
+                        background-color: v.$azul;
+                        border: none;
+                        border-radius: 5px;
+                        transition: .25s;
+                        color: v.$blanco;
+                        padding: 20px 80px;
+    
+                        &:hover{
+                            cursor: pointer;
+                            color: v.$morado;
+                            transform: scale(1.1);
+                        }
                     }
                 }
 

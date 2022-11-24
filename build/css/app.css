@@ -1655,6 +1655,7 @@ hr {
   border-radius: 5px;
   transition: 0.25s;
   color: white;
+  height: auto;
 }
 .content_all-bienvenida-biblioteca .content_acceso-producto .content_parrafo-acceso-producto a button:hover {
   cursor: pointer;
@@ -1733,15 +1734,16 @@ hr {
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 }
-.seccion_catalogo-curso .content_ofrecer-catalogo-curso .catalogo .content_info-detalle-producto .content_boton-detalle-producto button {
+.seccion_catalogo-curso .content_ofrecer-catalogo-curso .catalogo .content_info-detalle-producto .content_boton-detalle-producto a button {
   width: 100%;
   background-color: #0E45C4;
   border: none;
   border-radius: 5px;
   transition: 0.25s;
   color: white;
+  padding: 20px 80px;
 }
-.seccion_catalogo-curso .content_ofrecer-catalogo-curso .catalogo .content_info-detalle-producto .content_boton-detalle-producto button:hover {
+.seccion_catalogo-curso .content_ofrecer-catalogo-curso .catalogo .content_info-detalle-producto .content_boton-detalle-producto a button:hover {
   cursor: pointer;
   color: #76448A;
   transform: scale(1.1);
