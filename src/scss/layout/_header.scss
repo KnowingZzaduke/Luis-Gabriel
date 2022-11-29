@@ -85,7 +85,7 @@ header{
             margin: 0 5px 0 5px;
             color: v.$blanco;
             padding: 12px;
-            width: 112px;
+            width: 120px;
             background-color: v.$azulClaro;
             border: none;
             border-radius: 5px;
@@ -364,8 +364,7 @@ header{
 
     .content_1{
         .section_info{
-            padding-top: 6rem;
-            padding-left: 5rem;
+            padding: 6rem 15px 0 15px;
 
             h1{
                 font-size: v.$titulo;

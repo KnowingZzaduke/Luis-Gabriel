@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&family=Mukta&display=swap");
 *, *::before,
 *, ::after {
   padding: 0%;
@@ -11,7 +12,8 @@ html {
 }
 
 body {
-  font-family: "PT Sans", sans-serif;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-family: "Mukta", sans-serif;
 }
 
 h1 {
@@ -400,7 +402,7 @@ header {
   margin: 0 5px 0 5px;
   color: white;
   padding: 12px;
-  width: 112px;
+  width: 120px;
   background-color: #326EF7;
   border: none;
   border-radius: 5px;
@@ -608,8 +610,7 @@ header {
   gap: 40px;
 }
 .all_content .content_1 .section_info {
-  padding-top: 6rem;
-  padding-left: 5rem;
+  padding: 6rem 15px 0 15px;
 }
 .all_content .content_1 .section_info h1 {
   font-size: 4rem;
@@ -1807,6 +1808,7 @@ hr {
 .seccion_asesorias .all_content-seccion-asesorias .content_header-seccion-asesorias h1 {
   margin: 0%;
   padding-top: 2rem;
+  font-size: 4rem;
 }
 .seccion_asesorias .all_content-seccion-asesorias .content_header-seccion-asesorias p {
   margin-top: 1rem;

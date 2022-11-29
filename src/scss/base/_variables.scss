@@ -1,3 +1,6 @@
+//Imports
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&family=Mukta&display=swap');
+
 //Paleta de colores
 $gris: #E5E7E9;
 $azul: #0E45C4; 
@@ -10,7 +13,9 @@ $azulGradiente: linear-gradient(90deg, rgba(36,36,73,1) 0%, rgba(12,0,181,1) 100
 $azulAguaMarina:  #07cbd1;
 
 //Fuentes
-$body: 'PT Sans', sans-serif;
+$body: 'Barlow Semi Condensed', sans-serif;
+$body2: 'Mukta', sans-serif;
+
 
 //Tamaños de fuentes
 $titulo: 4rem;
