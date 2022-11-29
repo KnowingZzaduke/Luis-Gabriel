@@ -1,0 +1,43 @@
+@use '../../base/variables' as v;
+@use '../../base/mixins' as m;
+
+.header_asesorias{
+    height: 75px;
+}
+
+.seccion_asesorias{
+    text-align: center;
+    background-color: v.$gris;
+
+   .all_content-seccion-asesorias{
+    padding: 0 15px;
+    
+    .content_header-seccion-asesorias{
+        h1{
+            margin: 0%;
+            padding-top: 2rem;
+        }
+        
+        p{
+            margin-top: 1rem;
+        }
+    }
+
+    .content_main-seccion-asesorias{
+        margin-top: 1rem;
+        p{
+            margin-top: 1rem;
+        }
+    }
+
+    .content_footer-seccion-asesorias{
+        margin-top: 1rem;
+        padding-bottom: 3rem ;
+
+        p{
+            margin-top: 1rem;
+        }
+    }
+   }
+}
+
